@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nationalratswahl</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+    
+<body>
+    <nav>
+        <div class="navbar">
+            <div id="divH1">
+                <h1>Nationalratswahl 2013 und 2017</h1>
+            </div>  
+        </div>
+    </nav>
+      
+    <div class="row2">
+        <div class="flex2">
+            <h2 class="title" id="title13">Ergebnisse 2013</h2>
+            <h2 class="title" id="title17">Ergebnisse 2017</h2>
+        </div>
+            
+        <div class="flex2" id="divButton">
+            <button class="button" onclick="showSVG2()">2013</button> 
+            <button class="button" onclick="showSVG1()">2017</button>   
+        </div> 
+    </div>
+        
+<div class="row"> 
+    
+    <div class="flex">
+        <div id="divTabelle">
+            <table id="tabelleProzent">
+                <tr id="row1"></tr>
+                <tr id="row2"></tr>
+                <tr id="row3"></tr>
+            </table>    
+        </div>
+    
+        <div id="wahlsieger">
+            <table id="wahlsieger13">
+                <tr><th>Wahlsieger 2013</th></tr>
+                <tr><td>SPÖ 26,8%</td></tr>
+            </table>
+  
+            <table id="wahlsieger17">
+                <tr><th>Wahlsieger 2017</th></tr>
+                <tr><td>ÖVP 31,5%</td></tr>
+            </table>
+        </div>
+    </div>
+        
+    
+    <div class="flex" id="svgdiagramm">
+    
+        <svg id="svg1" display="block" version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img">
+
+            <g class="grid x-grid" id="xGrid">
+              <line x1="90" x2="90" y1="5" y2="371"></line>
+            </g>
+            <g class="grid y-grid" id="yGrid">
+              <line x1="90" x2="705" y1="370" y2="370"></line>
+            </g>
+            
+            <g class="labels x-labels">
+              <text x="150" y="400">SPÖ</text>
+              <text x="250" y="400">ÖVP</text>
+              <text x="350" y="400">FPÖ</text>
+              <text x="450" y="400">Grüne</text>
+              <text x="550" y="400">Neos</text>
+              <text x="650" y="400">Pilz</text>
+              <text x="400" y="440" class="label-title">Partei</text>
+            </g>
+            
+            <g class="labels y-labels">
+              <text x="80" y="20">50</text>
+              <text x="80" y="90">40</text>
+              <text x="80" y="160">30</text>
+              <text x="80" y="230">20</text>
+              <text x="80" y="300">10</text>
+              <text x="80" y="373">0</text>
+              <text x="50" y="200" class="label-title">%</text>
+            </g>
+
+  
+            <g class="data">  
+                <rect id="spö17" x="130" y="" width="40" height="" fill="#ff0000"/>
+                <rect id="övp17" x="230" y="" width="40" height="" fill="#00CED1"/> 
+                <rect id="fpö17" x="330" y="" width="40" height="" fill="#0000ff"/> 
+                <rect id="grüne17" x="430" y="" width="40" height="" fill="#32CD32"/> 
+                <rect id="neos17" x="530" y="" width="40" height="" fill="#ff00ff"/> 
+                <rect id="pilz17" x="630" y="" width="40" height="" fill="#D3D3D3"/> 
+
+                <text id="130" x="133" y="">26,9</text>
+                <text id="131" x="233" y="">31,5</text>
+                <text id="132" x="333" y="">26,0</text>
+                <text id="133" x="437" y="">3,8</text>
+                <text id="134" x="537" y="">5,3</text>
+                <text id="135" x="637" y="">4,4</text>
+            </g>
+        </svg>
+    
+    
+        <svg id="svg2" version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img">
+            
+            <g class="grid x-grid" id="xGrid">
+              <line x1="90" x2="90" y1="5" y2="371"></line>
+            </g>
+
+            <g class="grid y-grid" id="yGrid">
+              <line x1="90" x2="705" y1="370" y2="370"></line>
+            </g>
+  
+            <g class="labels x-labels">
+              <text x="150" y="400">SPÖ</text>
+              <text x="250" y="400">ÖVP</text>
+              <text x="350" y="400">FPÖ</text>
+              <text x="450" y="400">Grüne</text>
+              <text x="550" y="400">Neos</text>
+              <text x="650" y="400">Stronach</text>
+              <text x="400" y="440" class="label-title">Partei</text>
+            </g>
+
+            <g class="labels y-labels">
+              <text x="80" y="20">50</text>
+              <text x="80" y="90">40</text>
+              <text x="80" y="160">30</text>
+              <text x="80" y="230">20</text>
+              <text x="80" y="300">10</text>
+              <text x="80" y="373">0</text>
+              <text x="50" y="200" class="label-title">%</text>
+            </g>
+            
+            <g class="data">
+                <rect id="spö13" x="130" y="" width="40" height="" fill="#ff0000"/>
+                <rect id="övp13" x="230" y="" width="40" height="" fill="#000000"/> 
+                <rect id="fpö13" x="330" y="" width="40" height="" fill="#0000ff"/> 
+                <rect id="grüne13" x="430" y="" width="40" height="" fill="#32CD32"/> 
+                <rect id="neos13" x="530" y="" width="40" height="" fill="#ff00ff"/> 
+                <rect id="stronach13" x="630" y="" width="40" height="" fill="#D3D3D3"/> 
+
+                <text id="170" x="133" y="">26,8</text>
+                <text id="171" x="233" y="">24,0</text>
+                <text id="172" x="333" y="">20,5</text>
+                <text id="173" x="433" y="">12,4</text>
+                <text id="174" x="537" y="">5,0</text>
+                <text id="175" x="637" y="">5,7</text>
+            </g>
+        </svg>
+    </div>
+</div>
+   
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>    
+    
+</body>
+</html>
